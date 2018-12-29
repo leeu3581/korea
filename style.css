@@ -1,0 +1,49 @@
+
+.uk-slideshow-items {
+    color: #f9f9f9;
+}
+
+
+.uk-slideshow-items h2 {
+    color: #f9f9f9;
+}
+
+
+#left {
+    color: #f9f9f9;
+}
+
+#right {
+    color: #f9f9f9;
+}
+
+#intro {
+    background-color: #f9f9f9;
+    height: 130%;
+    vertical-align: center;
+    text-align:center; 
+    color: black;
+}
+
+#intro h2 {
+    padding-top: 15%;
+    margin-bottom: -20px;
+}
+
+.subs {
+    font-size: 25px;
+}
+
+.uk-description-list {
+    padding: 10% 10% 10% 10%;
+}
+
+#footer {
+    background-color: black;
+    height: 35%;
+}
+
+#footer p {
+    font-size: 13px;
+}
+
