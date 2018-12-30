@@ -38,6 +38,13 @@
     padding: 10% 10% 10% 10%;
 }
 
+@media (min-width: 1000px) {
+    #slides {
+        padding: 30px 60px 30px 60px;
+    }
+
+  }
+
 #footer {
     background-color: black;
     height: 35%;
