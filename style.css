@@ -1,11 +1,31 @@
+body {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+#logo {
+    height: 100px;
+    width: 70px;
+    padding: 5px 5px 5px 5px;
+}
+
+#head_text {
+    font-weight: bold;
+}
 
 .uk-slideshow-items {
-    color: #f9f9f9;
+    font-family: 'Gothic A1', sans-serif;
+    color: black;
 }
 
 
-.uk-slideshow-items h2 {
-    color: #f9f9f9;
+.uk-slideshow-items h1 {
+    font-family: 'Gothic A1', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.uk-slideshow-items img {
+    opacity: 0.7;
 }
 
 
@@ -18,16 +38,18 @@
 }
 
 #intro {
+    font-family: 'Gothic A1', sans-serif;
     background-color: #f9f9f9;
-    height: 130%;
+    height: 100%;
     vertical-align: center;
     text-align:center; 
     color: black;
 }
 
 #intro h2 {
-    padding-top: 15%;
-    margin-bottom: -20px;
+    padding-top: 50px;
+    margin-bottom: -10px;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 .subs {
@@ -45,9 +67,23 @@
 
   }
 
+#slides div{
+    padding: 50px 15px 15px 15px;
+
+}
+
+#slides {
+    vertical-align: center;
+    text-align:center; 
+}
+
+#slides img {
+    padding-bottom: 25px;
+}
+
 #footer {
     background-color: black;
-    height: 35%;
+    height: 38%;
 }
 
 #footer p {
