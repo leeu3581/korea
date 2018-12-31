@@ -11,7 +11,7 @@
                     <a class="uk-navbar-item uk-logo" href="./index.html"><img src="static/Flag_map_of_Korea_(South_Korea).png" alt="" id="logo"></a>
                     <h1 class=".uk-text-lead" id="head_text">IKCU </h1><h4> Center</h4>
                     <!-- International Korean Cultural Unification Center -->
-                    <div class="uk-navbar-right">
+                    <div class="uk-navbar-right" id="desktop_nav">
             
                         <ul class="uk-navbar-nav">
                             <li><a href="./index.html">Home</a></li>
@@ -25,19 +25,45 @@
                         </ul>
             
                     </div>
+                    <!-- hidden nav for mobile -->
+
+                    <div class="uk-navbar-right" id="mobile_nav" uk-toggle="target: #offcanvas-nav-primary">
+                            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#" id="mobile_icon"></a>
+                        </div>
                 </nav>
+                  <!-- nav for mobile -->
+                  <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                    
+                            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                <li class="uk-parent">
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li class="uk-parent">
+                                     <a href="./about.html">About</a>
+                                </li>
+                                <li class="uk-active">
+                                        <a href="#">Vision</a>
+                                </li>
+                                <li class="uk-parent">
+                                        <a href="./contact.html">Contact</a>
+                                </li>
+                            </ul>
+                    
+                        </div>
+                    </div>
                 <div class="uk-cover-container">
-                <img src="static/Korean_sword_dance-Jinju_geommu-03.jpg" alt="" id="visionpic">
+                <img src="static/Korean.dance-Taepyeongmu-01.jpg" alt="" id="visionpic">
                 </div>
           
             <div class="uk-container uk-container-expand" id="slides">
                    
-                <div class="uk-text-lead">전략 방향 및 과제</div>
-                <img data-src="static/slide1.png" width="1800" height="900" alt="" uk-img>
+                <img data-src="static/slide1_1_1.png" width="1800" height="900" alt="" uk-img>
             </div>
 
             <div class="uk-section" id="footer">
                     <div class="uk-container">
+                        <!-- <h3 class=".uk-text-lead">Leading the global Korea unification movement</h3> -->
                             <p>
                                 International Korean Cultural Unification Center, London, United Kingdom 
                             </p>
@@ -46,9 +72,9 @@
                             <hr class="uk-divider-small">
                             <p>EMAIL: info@ikcu.org</p>
                             <hr class="uk-divider-small">
-                            <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
-                            <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
-                            <a href="" class="uk-icon-button" uk-icon="google-plus"></a>
+                            <a href="#"><img src="static/facebook.png" alt="" class="social_icons"></a>
+                            <a href="#"><img src="static/youtube.png" alt="" class="social_icons"></a>
+                            <a href="#"><img src="static/twitter.png" alt="" class="social_icons"></a>
                             <br>
                             <p>© International Korean Cultural Unification Center 2018. All rights reserved.
                                     Made with ♥ </p>

@@ -8,26 +8,32 @@ body {
     padding: 5px 5px 5px 5px;
 }
 
+#mobile_nav {
+    display: none;
+}
+
+#mobile_icon {
+    height: 150px;
+    width: 150px;
+}
+
 #head_text {
     font-weight: bold;
 }
 
-.uk-slideshow-items {
+.uk-slideshow-items h2{
     font-family: 'Gothic A1', sans-serif;
-    color: black;
+    color: white;
+    text-shadow: 0 0 30px gray;
 }
 
 
 .uk-slideshow-items h1 {
     font-family: 'Gothic A1', sans-serif;
-    color: black;
+    color: white;
     font-weight: bold;
+    text-shadow: 0 0 30px gray;
 }
-
-.uk-slideshow-items img {
-    opacity: 0.7;
-}
-
 
 #left {
     color: #f9f9f9;
@@ -40,7 +46,6 @@ body {
 #intro {
     font-family: 'Gothic A1', sans-serif;
     background-color: #f9f9f9;
-    height: 100%;
     vertical-align: center;
     text-align:center; 
     color: black;
@@ -81,16 +86,47 @@ body {
     padding-bottom: 25px;
 }
 
-#visionpic {
-    /* max-height: 70%; */
-}
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : portrait) {
+
+        #slides {
+            padding: 30px 0px 30px 0px;
+        }
+
+     }
+
+     /* iphones 6, 7,8 portrait */
+@media only screen 
+     and (min-device-width : 375px) 
+     and (max-device-width : 667px) 
+     and (orientation : portrait) {
+        
+    }  
+    
+ @media only screen and (max-width: 900px) {
+        #desktop_nav {
+            display: none;
+        }
+
+        #mobile_nav {
+            display: inline;
+        }
+      }    
 
 #footer {
-    background-color: black;
-    height: 500px;
+    background-color: rgb(51, 51, 51);
+    height: 430px;
+    color: #f9f9f9;
 }
 
 #footer p {
     font-size: 13px;
 }
 
+.social_icons {
+    height: 35px;
+    width: 35px;
+}

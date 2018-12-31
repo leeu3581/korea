@@ -12,7 +12,7 @@
                     <a class="uk-navbar-item uk-logo" href="./index.html"><img src="static/Flag_map_of_Korea_(South_Korea).png" alt="" id="logo"></a>        
                     <h1 class=".uk-text-lead" id="head_text">IKCU </h1><h4> Center</h4>
                     <!-- International Korean Cultural Unification Center -->
-                    <div class="uk-navbar-right">
+                    <div class="uk-navbar-right" id="desktop_nav">
             
                         <ul class="uk-navbar-nav">
                             <li class="uk-active"><a href="#">Home</a></li>
@@ -26,7 +26,34 @@
                         </ul>
             
                     </div>
+                     <!-- hidden nav for mobile -->
+
+                     <div class="uk-navbar-right" id="mobile_nav" uk-toggle="target: #offcanvas-nav-primary">
+                            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#" id="mobile_icon"></a>
+                        </div>
                 </nav>
+                <!-- nav for mobile -->
+                <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                    
+                            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                <li class="uk-active">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="uk-parent">
+                                     <a href="./about.html">About</a>
+                                </li>
+                                <li class="uk-parent">
+                                        <a href="./vision.html">Vision</a>
+                                </li>
+                                <li class="uk-parent">
+                                        <a href="./contact.html">Contact</a>
+                                </li>
+                            </ul>
+                    
+                        </div>
+                    </div>
+            
             </div>
             <div uk-slideshow="autoplay: true" id="slide_container">
                     <ul class="uk-slideshow-items">
@@ -34,21 +61,21 @@
                                 <img src="static/chinese-1081891_960_720.jpg" alt="" uk-cover>
                                 <div class="uk-position-center uk-position-small uk-text-center">
                                         <h1 uk-slideshow-parallax="x: 100,-100">문화 교류는 통일의 첫 걸음</h1>
-                                        <p uk-slideshow-parallax="x: 200,-200">Unification through Cultural Englightenment</p>
+                                        <h2 uk-slideshow-parallax="x: 200,-200">Unification through Cultural Englightenment</p>
                                     </div>
                             </li>
                             <li>
                                 <img src="static/Korean.dance-Taepyeongmu-01.jpg" alt="" uk-cover>
                                 <div class="uk-position-center uk-position-small uk-text-center">
                                         <h1 uk-slideshow-parallax="x: 100,-100">국제 사회와 함께하는 남북한 문화 교류</h1>
-                                        <p uk-slideshow-parallax="x: 200,-200">Cultural Exchange of North Korea and South Korea</p>
+                                        <h2 uk-slideshow-parallax="x: 200,-200">Cultural Exchange of North Korea and South Korea</p>
                                     </div>
                             </li>
                             <li>
                                 <img src="static/Korean_sword_dance-Jinju_geommu-03.jpg" alt="" uk-cover>
                                 <div class="uk-position-center uk-position-small uk-text-center">
                                         <h1 uk-slideshow-parallax="x: 100,-100">우리 모두 함께 하는 통일의 시작</h1>
-                                        <p uk-slideshow-parallax="x: 200,-200">We stand together</p>
+                                        <h2 uk-slideshow-parallax="x: 200,-200">We stand together</p>
                                     </div>
                             </li>
                         </ul> 
@@ -90,9 +117,9 @@
                             <hr class="uk-divider-small">
                             <p>EMAIL: info@ikcu.org</p>
                             <hr class="uk-divider-small">
-                            <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
-                            <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
-                            <a href="" class="uk-icon-button" uk-icon="google-plus"></a>
+                            <a href="#"><img src="static/facebook.png" alt="" class="social_icons"></a>
+                            <a href="#"><img src="static/youtube.png" alt="" class="social_icons"></a>
+                            <a href="#"><img src="static/twitter.png" alt="" class="social_icons"></a>
                             <br>
                             <p>© International Korean Cultural Unification Center 2018. All rights reserved.
                                     Made with ♥ </p>
