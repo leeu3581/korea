@@ -106,7 +106,7 @@ body {
         
     }  
     
- @media only screen and (max-width: 900px) {
+ @media only screen and (max-width: 1200px) {
         #desktop_nav {
             display: none;
         }
